@@ -5,8 +5,7 @@
 replicaCount: 1
 
 image:
-  acr:
-  repository: http://devopsinterviewacr.azurecr.io
+  repository: acrinterview.azurecr.io/simple-web
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
