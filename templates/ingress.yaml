@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-  - host: example-elad.com
+  - host: simple-web.com
     http:
       paths:
       - path: /elad
