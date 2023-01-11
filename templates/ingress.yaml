@@ -15,4 +15,5 @@ spec:
           service:
             name: interview-assignment-app-chart
             port:
-              name: http
+              number: 80
+              # name: http
