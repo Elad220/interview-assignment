@@ -11,3 +11,7 @@ spec:
     metadata:
       type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
       value: "50"
+  - type: cpu
+    metadata:
+      type: AverageValue # Allowed types are 'Utilization' or 'AverageValue'
+      value: "50"
