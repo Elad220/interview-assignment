@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: simple-web.com
+  - host: elad.simple-web.com
     http:
       paths:
       - path: /elad
