@@ -1,10 +1,10 @@
-apiVersion: keda.sh/v1alpha1
+apiVersion: keda.k8s.io/v1alpha1
 kind: ScaledObject
 metadata:
-  name: interview-assignment-app-chart
+  name: dep-scaledobject
   namespace: elad
-    labels:
-        deploymentName: interview-assignment-app-chart
+  labels:
+    deploymentName: interview-assignment-app-chart
 spec:
     scaleTargetRef:
         deploymentName: interview-assignment-app-chart
