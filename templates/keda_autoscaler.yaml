@@ -1,0 +1,20 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: interview-assignment-app-chart
+  namespace: elad
+    labels:
+        deploymentName: interview-assignment-app-chart
+spec:
+    scaleTargetRef:
+        deploymentName: interview-assignment-app-chart
+    pollingInterval: 5
+    cooldownPeriod:  30
+    minReplicaCount: 1
+    maxReplicaCount: 10
+    triggers:
+    - type: cpu
+    metadata:
+        # Required
+        type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
+        value: "60"
