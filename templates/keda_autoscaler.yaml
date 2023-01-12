@@ -17,7 +17,7 @@ spec:
       value: "50"
   - type: cron
     metadata:
-        timezone: Asia/Israel  
+        timezone: Israel
         start: 0 19 * * *       
         end: 0 20 * * *
         desiredReplicas: "10"
