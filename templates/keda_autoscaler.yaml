@@ -15,7 +15,7 @@ spec:
     metadata:
       type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
       value: "50"
-    - type: cron
+  - type: cron
     metadata:
         timezone: Asia/Israel  
         start: 0 8 * * *       
