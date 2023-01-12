@@ -3,8 +3,6 @@ kind: ScaledObject
 metadata:
   name: dep-scaledobject
   namespace: elad
-  labels:
-    deploymentName: interview-assignment-app-chart
 spec:
     scaleTargetRef:
         deploymentName: interview-assignment-app-chart
@@ -14,6 +12,11 @@ spec:
     maxReplicaCount: 10
     triggers:
     - type: cpu
+    metadata:
+        # Required
+        type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
+        value: "60"
+    - type: memory
     metadata:
         # Required
         type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
