@@ -8,8 +8,8 @@ spec:
     name: interview-assignment-app-chart
   pollingInterval: 30
   cooldownPeriod:  300
-  minReplicas: 1
-  maxReplicas: 5
+  minReplicaCount: 1
+  maxReplicaCount: 5
   triggers:
   - type: cpu
     metadata:
