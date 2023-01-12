@@ -1,7 +1,7 @@
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:
-  name: cpu-scaledobject
+  name: simple-web-scaledobject
   namespace: elad
 spec:
   scaleTargetRef:
@@ -11,7 +11,7 @@ spec:
     metadata:
       type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
       value: "50"
-  - type: cpu
+  - type: memory
     metadata:
-      type: AverageValue # Allowed types are 'Utilization' or 'AverageValue'
+      type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
       value: "50"
