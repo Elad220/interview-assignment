@@ -10,11 +10,11 @@ spec:
   - type: cpu
     metadata:
       type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
-      value: "50"
+      value: "80"
   - type: memory
     metadata:
       type: Utilization # Allowed types are 'Utilization' or 'AverageValue'
-      value: "50"
+      value: "80"
   - type: cron
     metadata:
         timezone: Israel
