@@ -6,6 +6,10 @@ metadata:
 spec:
   scaleTargetRef:
     name: interview-assignment-app-chart
+    pollingInterval: 5
+    cooldownPeriod:  30
+    minReplicaCount: 1
+    maxReplicaCount: 5
   triggers:
   - type: cpu
     metadata:
